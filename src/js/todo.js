@@ -35,7 +35,7 @@ function loadToDos() {
 
 function handleTodoErase(event) {
     const li = event.target.parentElement;
-    const targetId = li.id;
+    const targetId = parseInt(li.id);
     // 람다를 이용하여 현재 targetId와 비교한다
     toDos = toDos.filter((item) => item.Id != targetId);
 
