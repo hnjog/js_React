@@ -10,10 +10,21 @@
 </head>
 
 <body>
-    <div class="hello">
-        <h1 class = "cool_font">Click Me!</h1>
-    </div>
-    <script src="app.js"></script>
+    <!-- form : 사용자 입력, 데이터 전송, div : 콘텐츠 구성요소 -->
+    <form id="login-form" class ="hidden">
+        <!-- required와 maxlength는 'form'내부에서 활성화 -->
+        <input
+         required
+          maxlength="15"
+           type="text"
+            placeholder="What is your name?" />
+        <input type="submit" value="Log in" />
+    </form>
+
+    <h1 id ="greeting" class ="hidden">
+    </h1>
+
+    <script src="js/greetings.js"></script>
 </body>
 
 </html>
